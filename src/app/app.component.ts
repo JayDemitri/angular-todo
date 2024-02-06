@@ -10,5 +10,7 @@ import { TodosComponent } from './todos/todos.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-todo';
+
+  // Cli Demo Content removed
+
 }

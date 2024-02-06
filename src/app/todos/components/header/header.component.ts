@@ -9,8 +9,11 @@ import { TodosService } from '../../services/todos.service';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+
+  // Our todo input empty untill filled
   text: string = '';
 
+  // Our todo service
   todoService = inject(TodosService)
 
   changeText(event: Event): void {
