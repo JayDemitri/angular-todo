@@ -1,5 +1,5 @@
 <section class="main" [ngClass]="{hidden: noTodosClass()}">
-    <input class="toggle-all" type="checkbox" [checked]="isAllTodosSelected()" (change)="toggleAllTodos($event)" />
+    <input class="toggle-all" id="toggle-all" name="toggle-all" type="checkbox" [checked]="isAllTodosSelected()" (change)="toggleAllTodos($event)" />
     <label for="toggle-all">Mark All As Completed</label>
     <ul class="todo-list">
         <app-todos-todo *ngFor="let todo of visableTodos()" [todo]="todo" [isEditing]="editingId === todo.id"
